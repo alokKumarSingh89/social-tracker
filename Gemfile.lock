@@ -115,7 +115,7 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
     pg (1.4.3)
     puma (5.6.5)
@@ -182,14 +182,14 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  x86_64-linux
+  arm64-darwin-21
 
 DEPENDENCIES
   bootsnap
   debug
   importmap-rails
   jbuilder
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   sprockets-rails
