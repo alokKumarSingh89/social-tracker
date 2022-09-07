@@ -1,0 +1,17 @@
+<h1>Twitter Users: <%=@twitter_users.count %></h1>
+<% if @twitter_users.empty? %>
+    <p>No Follower found</p>
+<% end %>
+
+<div >
+    <% @twitter_users.each do |user| %>
+    <div class="ms-3 row pb-3 border-bottom">
+        <div class="col-2 border-end">
+            <%= link_to user.screen_name, "https://twitter.com/#{user.screen_name}"  %>
+        </div>
+        <div class="col-10">
+            <%= user.description%>
+        </div>
+        </div>
+    <% end %>
+</div>
